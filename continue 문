@@ -1,0 +1,36 @@
+for (let i = 1; i <= 100; i++) {
+  if (i % 2 !== 0) {
+    continue;
+  }
+
+  for (let j = 1; j <= i; j++) {
+    console.log(i);
+  }
+}
+
+
+
+for (let i = 1; i <= 10; i++) {
+  for (let j = 1; j <= 10; j++) {
+    console.log(`${i} * ${j} = ${i * j}`);
+  }
+}
+
+
+
+for (let i = 2; i <= 100; i++) {
+  let isPrime = true;
+
+  for (let j = 2; j < i; j++) {
+    if (i % j === 0) {
+      isPrime = false;
+      break;
+    }
+  }
+
+  if (!isPrime) {
+    continue;
+  }
+
+  console.log(i);
+}
